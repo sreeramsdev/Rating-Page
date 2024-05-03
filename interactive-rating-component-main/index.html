@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<!-- 1 2 3 4 5
+
+Submit -->
+
+<!-- Rating state end -->
+
+<!-- Thank you state start -->
+
+<!-- You selected Add rating here  out of 5
+
+ Thank you!
+
+We appreciate you taking the time to give a rating. If you ever need more support, 
+don’t hesitate to get in touch!
+
+Thank you state end --> 
+  <!-- Rating state start -->
+<div class="container">
+  <div class="main">
+   <div class="star-div"> <img src="./images/icon-star.svg" alt=""> </div>
+    <div class="paragraph">
+       <br> <span>  How did we do?</span>
+       <br> <br><label>  Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</label>
+    </div>
+    <div class="rate-btn">
+      <button id="btn1" onclick="onClick4()">1</button>
+      <button id="btn2" onclick="onClick3()">2</button>
+      <button id="btn3" onclick="onClick2()">3</button>
+      <button id="btn4" onclick="onClick1()">4</button>
+      <button id="btn5" onclick="onClick()">5</button>
+    </div>
+    <button id="submit" onclick="thankYou()">Submit</button>
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SREERAM S</a>.
+  </div>
+
+  <script>
+    function thankYou(){
+      document.location="./thanku.html"
+    }
+    function clickEvent1(){
+      var btn1=document.getElementById("btn1")
+      btn1.textContent=btn1.textContent
+    }
+    function clickEvent2(){
+      var btn2=document.getElementById("btn2")
+      btn2.textContent=btn2.textContent
+    }
+    function clickEvent3(){
+      var btn3=document.getElementById("btn3")
+      btn3.textContent=btn3.textContent
+    }
+    function onClick4(){
+      document.getElementById("btn1").style.backgroundColor="rgb(82, 81, 81)"
+    }
+    function onClick3(){
+      document.getElementById("btn2").style.backgroundColor="rgb(82, 81, 81)"
+    }
+    function onClick2(){
+      document.getElementById("btn3").style.backgroundColor="rgb(82, 81, 81)"
+    }
+    function onClick1(){
+      document.getElementById("btn4").style.backgroundColor="rgb(82, 81, 81)"
+    }
+    function onClick(){
+      document.getElementById("btn5").style.backgroundColor="orangered"
+    }
+  </script>
+</body>
+</html>
+
